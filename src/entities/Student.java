@@ -5,6 +5,8 @@ public class Student {
     private String name;
     private int age;
     private double note;
+    private int listeDesNotes[] = new int[2];
+
 
     // Constructeurs
     public Student() {}
@@ -27,4 +29,11 @@ public class Student {
 
     public double getNote() { return note; }
     public void setNote(double note) { this.note = note; }
+    public void afficherEtudiant(){
+        System.out.println("nom : " + name + ", age : " +age + ", note : "+ note);
+    }
+    public void remplir_table() {
+        listeDesNotes[0] = 10;
+        listeDesNotes[1] = 11;
+    }
 }
